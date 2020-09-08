@@ -212,6 +212,7 @@ GameObject:
   - component: {fileID: 114980761033859176}
   - component: {fileID: 114827819592080412}
   - component: {fileID: 114359692405659808}
+  - component: {fileID: 114271062099623574}
   m_Layer: 0
   m_Name: sixteenCoins
   m_TagString: Untagged
@@ -4365,6 +4366,54 @@ MonoBehaviour:
   AllowSelectionWrapY: 0
   ForceSelectionHighlight: 0
   ForceInteractionHighlight: 0
+--- !u!114 &114271062099623574
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1204050566093504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d86afbfd3d04fb1962577e047719db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bomb: {fileID: 114827819592080412}
+  Module: {fileID: 114980761033859176}
+  Audio: {fileID: 114415142324555016}
+  coins:
+  - {fileID: 114471577433252436}
+  - {fileID: 114312668187945054}
+  - {fileID: 114744789565281136}
+  - {fileID: 114136454108134092}
+  - {fileID: 114046127284691886}
+  - {fileID: 114797365321825512}
+  - {fileID: 114308516907288188}
+  - {fileID: 114413984113684836}
+  - {fileID: 114893731113149792}
+  - {fileID: 114833213213385954}
+  - {fileID: 114632068076161736}
+  - {fileID: 114252851378940176}
+  - {fileID: 114265033507625914}
+  - {fileID: 114298100164351792}
+  - {fileID: 114798216621257000}
+  - {fileID: 114435221175840628}
+  coinTextMeshes:
+  - {fileID: 102543380306975750}
+  - {fileID: 102368127597322724}
+  - {fileID: 102398764387441884}
+  - {fileID: 102590451753514408}
+  - {fileID: 102794934963695626}
+  - {fileID: 102386737748256272}
+  - {fileID: 102412275444107836}
+  - {fileID: 102914291643555020}
+  - {fileID: 102186403739272954}
+  - {fileID: 102738214689277602}
+  - {fileID: 102663582983887950}
+  - {fileID: 102977743818816144}
+  - {fileID: 102306751687152000}
+  - {fileID: 102610368773446156}
+  - {fileID: 102585829597203008}
+  - {fileID: 102190017764792214}
 --- !u!114 &114298100164351792
 MonoBehaviour:
   m_ObjectHideFlags: 1
