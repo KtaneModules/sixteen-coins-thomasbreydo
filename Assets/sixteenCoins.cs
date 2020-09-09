@@ -18,7 +18,7 @@ public class sixteenCoins : MonoBehaviour
 
 	private static int _moduleIdCounter = 1;
 	private int _moduleId = 0;
-	private bool[] coinWasInitiallyOne = new bool[16];
+	private bool[] wasInitiallyHeads = new bool[16];
 	private int indexOfDesiredCoin;
 
 
@@ -41,15 +41,15 @@ public class sixteenCoins : MonoBehaviour
 
 	void RandomizeAndSetCoinAtIndex(int index)
 	{
-		bool willBeAOne = Random.Range(0, 2) == 0;  // 50%
-		coinWasInitiallyOne[index] = willBeAOne;
-		if (willBeAOne)
+		bool willBeHeads = Random.Range(0, 2) == 0;  // 50%
+		wasInitiallyHeads[index] = willBeHeads;
+		if (willBeHeads)
 		{
-			AssignStringToCoinAtIndex(index, "1");
+			AssignStringToCoinAtIndex(index, "H");
 		}
 		else
 		{
-			AssignStringToCoinAtIndex(index, "0");
+			AssignStringToCoinAtIndex(index, "T");
 		}
 	}
 
@@ -94,7 +94,7 @@ public class sixteenCoins : MonoBehaviour
 
 	void FlipCoinAtIndex (int index)
 	{
-		coinTextMeshes[index].text = coinTextMeshes[index].text == "0" ? "1" : "0";
+		coinTextMeshes[index].text = coinTextMeshes[index].text == "T" ? "H" : "T";
 	}
 
 }
