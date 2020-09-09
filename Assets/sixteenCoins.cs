@@ -33,7 +33,7 @@ public class sixteenCoins : MonoBehaviour
 	// 12   13   14   15           1100  1101  1110  1111
 
 	int[] evenColumnIndices = {1, 5, 9, 13, 3, 7, 11, 15};
-	int[] evenRowIndices = {0, 1, 2, 3, 8, 9, 10, 11};
+	int[] evenRowIndices = {4, 5, 6, 7, 12, 13, 14, 15};
 	int[] rightHalfIndices = {2, 6, 10, 14, 3, 7, 11, 15};
 	int[] bottomHalfIndices = {8, 9, 10, 11, 12, 13, 14, 15};
 
@@ -140,14 +140,6 @@ public class sixteenCoins : MonoBehaviour
                              == CoinType.Heads ? CoinType.Tails : CoinType.Heads;
 			Module.HandlePass();
 		}
-	}
-
-	void FlipCoinAtIndex (int index)
-	{
-		CoinType newCoinType = 
-			currentCoinTypes[index] == CoinType.Heads ? CoinType.Tails : CoinType.Heads;
-		currentCoinTypes[index] = newCoinType;
-		SetCoinTextMeshAtIndex(index, newCoinType);
 	}
 
 	void SetCoinTextMeshAtIndex (int index, CoinType coinType)
