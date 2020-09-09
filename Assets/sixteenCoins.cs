@@ -74,7 +74,9 @@ public class sixteenCoins : MonoBehaviour
 		if (IsOdd(NumberOfHeadsInRightHalf())) indexOfTargetCoin++;
 		indexOfTargetCoin <<= 1;
 		if (IsOdd(NumberOfHeadsInEvenColumns())) indexOfTargetCoin++;
-		return indexOfTargetCoin;
+		return indexOfTargetCoin; 
+		/* note that the binary is the REVERSE of the number given by top-to-bottom
+		   reading of the manual */
 	}
 
 	bool IsOdd (int x)
