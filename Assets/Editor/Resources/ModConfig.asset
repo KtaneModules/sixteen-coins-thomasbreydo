@@ -14,7 +14,11 @@ MonoBehaviour:
   id: sixteenCoins
   title: 16 Coins
   author: Thomas Breydo, Wilby Opich
-  description: 'Module ID: sixteenCoins
+  description: 'There will be 16 coins arranged in a 4x4 square: "H" is heads, "T"
+    is tails. Follow the steps to determine the target coin, then click it.
+
+
+    Module ID: sixteenCoins
 
     Authors: Thomas Breydo, Wilby Opich'
   version: 1.0
